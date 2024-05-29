@@ -1,0 +1,217 @@
+<meta name="viewport" content="width=320, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<link href="file:///H:/Marketing/Divisional/CRM/GROUP/PROCESS%20&%20TOOLKITS/PRODUCTION%20CODE%20LIBRARY/_CSS/CR_CSS.css" type="text/css" rel="stylesheet">
+
+<!-- 
+
+Uses calc CSS as found at https://css-tricks.com/fun-viewport-units/
+Uses code from https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email
+
+To work out mobile aspect ratio, visit https://andrew.hedges.name/experiments/aspect_ratio/
+Type in height and width (w1 & h1) and grab the aspect ratio from the 'your aspect ratio' section.
+
+Change the value in the .video-wrapper video CSS under @media only screen and (max-width:640px)  to match aspect ratio. E.g. If the aspect ratio is 16:9 replace 2/3 in height:calc(100vh * (2/3)!important; to have 9/16
+
+Three images are needed:
+1. Apple Mail/Outlook - right click to play
+2. iOS - No play button
+3. All other clients - play button
+See seperate word document for more information.
+ 
+ Code below may be required for some brands instead of #MessageViewBody
+  .full-width .video-wrapper { display:block!important; }
+  .full-width .video-fallback { display:none!important; }
+
+-->
+%%[*/CUSTOM CSS/*]%%
+<style type="text/css">
+ .video-wrapper {display:none !important;}
+
+ @media (-webkit-min-device-pixel-ratio: 0) 
+ {	
+  .video-wrapper { display:block!important; }
+  .video-fallback { display:none!important; }
+}
+ @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+    div[class^=video-wrapper] { display:block!important; }
+    div[class^=video-fallback] { display:none!important; }
+ }
+
+	  #MessageViewBody .video-wrapper { display:block!important; }
+  #MessageViewBody .video-fallback { display:none!important; }
+	
+@media only screen and (max-width:640px)
+{
+	.video-wrapper{
+			width: 100% !important;
+			height: auto !important;
+		}
+ 	.video-wrapper video{
+			width: 100% !important;		
+			height:calc(100vw * (2/3))!important;
+		
+	}	
+}
+@media only screen and (max-width:640px), (min-device-width: 320px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 0)
+{
+	 .video-wrapper video{
+			background:url('http://image.e.countryroad.com.au/lib/fe9312727260027f74/m/32/2018-MothersDay-video.jpg') !important;
+			background-repeat: no-repeat !important;
+			background-size: 100%!important;
+			object-fit: cover;
+	}
+}
+@media yahoo {
+  .video-fallback { display:block !important; }
+}
+</style>
+
+<body>
+Standard full width video
+<table border="0" cellpadding="0" cellspacing="0"  width="600" align="center" class="full-width">
+  <tr>
+    <td align="center"  class="full-width" width="600"  >
+		<!-- video section -->
+		<div class="video-wrapper" style="display:none;text-align: center;width: 600px;height: 400px;overflow: hidden;">
+
+		<video controls="controls" poster="data:image/gif,AAAA"  style="background: transparent no-repeat url('http://image.e.countryroad.com.au/lib/fe9312727260027f74/m/32/2018-MothersDay-video-playrc.jpg') center center;   
+		background-size: 100%;overflow: hidden;height: inherit;width: inherit;display: block;" autoplay loop controlsList="nodownload" muted >
+			 <source src="" />
+			  <!-- fallback for Apple Mail/Outlook Mac OS -->
+			  <a  href="%%=RedirectTo(Concat(@baseURL,'?utm_campaign=',@campaigntag,'&utm_source=brand&utm_medium=email&utm_term=',@category,'&utm_content=',@promotype))=%%"  target="_blank" conversion="false" alias="Video" ><img 
+				src="http://image.e.countryroad.com.au/lib/fe9312727260027f74/m/32/2018-MothersDay-video-play.jpg" border="0"  width="600" class="full-width"/></a>
+		</video>
+		</div>
+		<!-- fallback section  -->
+		<div class="video-fallback">
+		  <a  href="%%=RedirectTo(Concat(@baseURL,'?utm_campaign=',@campaigntag,'&utm_source=brand&utm_medium=email&utm_term=',@category,'&utm_content=',@promotype))=%%"  target="_blank" conversion="false" alias="Video"><img
+			src="http://image.e.countryroad.com.au/lib/fe9312727260027f74/m/32/2018-MothersDay-video-play.jpg" width="600" border="0"  class="full-width" /></a>
+		</div>
+
+	  </td>
+</tr>
+</table>
+
+
+Video inset in border
+<style type="text/css">
+	@media only screen and (max-width:480px){
+
+	.video-pad{
+		padding: 3% !important;
+	}
+}
+ .video-wrapper {display:none !important;}
+
+ @media (-webkit-min-device-pixel-ratio: 0) and (min-device-width:1024px) 
+ {	
+  .video-wrapper { display:block!important; }
+  .video-fallback { display:none!important; }
+}
+ @supports (-webkit-overflow-scrolling:touch) and (color:#ffffffff) {
+    div[class^=video-wrapper] { display:block!important; }
+    div[class^=video-fallback] { display:none!important; }
+ }
+
+	  #MessageViewBody .video-wrapper { display:block!important; }
+  #MessageViewBody .video-fallback { display:none!important; }
+	
+@media only screen and (max-width:640px)
+{
+	.video-wrapper{
+			width: 100% !important;
+			height: auto !important;
+		}
+ 	.video-wrapper video{
+			width: 100% !important;		
+			height:calc(90vw * (9/16))!important;
+		
+	}	
+}
+@media only screen and (max-width:640px), (min-device-width: 320px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 0)
+{
+	 .video-wrapper video{
+			background:url('http://image.e.witchery.com.au/lib/fe9012727d60077876/m/23/0119FEB-LE-Launch_04noplay.jpg') !important;
+			background-repeat: no-repeat !important;
+			background-size: 100%!important;
+			object-fit: cover;
+	}
+}
+@media yahoo {
+  .video-fallback { display:block !important; }
+
+}
+</style>
+<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#7c3131">
+  
+  
+  	 
+  <tr>
+    <td valign="bottom" align="center" style="padding: 12px;" class="video-pad"><table  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#7c3131">
+  
+  
+  	 
+  <tr>
+<td align="center"  class="full-width" width="600"  >
+		<!-- video section -->
+		<div class="video-wrapper" style="display:none;text-align: center;width: 575px;height: 323px;overflow: hidden;">
+
+		<video controls="controls" poster="data:image/gif,AAAA"  style="background: transparent no-repeat url('http://image.e.witchery.com.au/lib/fe9012727d60077876/m/23/0119FEB-LE-Launch_04.jpg') center center;   
+		background-size: 100%;overflow: hidden;height: inherit;width: inherit;display: block;" autoplay loop controlsList="nodownload" muted >
+			 <source src="https://player.vimeo.com/external/312042996.hd.mp4?s=f62850a7639bb56fada8508ac6d1ceac9ac14ff8&profile_id=175&download=1" type="video/mp4"/>
+			  <!-- fallback for Apple Mail/Outlook Mac OS -->
+			<a href="%%=RedirectTo(Concat(@www_witchery_com,'on-film','?utm_campaign=',@trackingcode,'&utm_source=20&utm_medium=email&utm_content=campaign'))=%%" target="_blank" alias="Video" style="font-family:Avenir, Helvetica, Arial, sans-serif; font-size:12px; color:#000000;"><img 
+				src="http://image.e.witchery.com.au/lib/fe9012727d60077876/m/23/0119FEB-LE-Launch_04.jpg" border="0"  width="575" class="full-width"/></a>
+		</video>
+		</div>
+		<!-- fallback section  -->
+		<div class="video-fallback">	<a href="%%=RedirectTo(Concat(@www_witchery_com,'on-film','?utm_campaign=',@trackingcode,'&utm_source=20&utm_medium=email&utm_content=campaign'))=%%" target="_blank" alias="Video" style="font-family:Avenir, Helvetica, Arial, sans-serif; font-size:12px; color:#000000;"><img
+			src="http://image.e.witchery.com.au/lib/fe9012727d60077876/m/23/0119FEB-LE-Launch_04.jpg" width="575" border="0"  class="full-width" /></a>
+		</div>
+
+	  </td>
+  </tr>
+  
+  	
+</table></td>
+  </tr>
+  
+  	
+</table>
+	
+	Video with 2 coulour background 
+	<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  
+  
+    
+  <tr><td valign="top" align="center" width="5%"><img class="full-width" src="https://image.e.witchery.com.au/lib/fe9012727d60077876/m/31/0421OCRF-Launch_11bg.jpg" alt="" width="30" height="675" style="display:block;" border="0">
+  </td>
+    <td valign="top" align="center" style="padding: 0;"><table border="0" align="center" cellpadding="0" cellspacing="0" width="540" class="full-width">
+  
+  
+    
+  <tr>
+<td align="center" class="full-width" width="540">
+  <!-- video section -->
+  <div class="video-wrapper" style="display:none;text-align: center;width: 540px;height: 675px;overflow: hidden;">
+
+  <video controls="" poster="data:image/gif,AAAA" style="background: transparent no-repeat url('https://image.e.witchery.com.au/lib/fe9012727d60077876/m/31/0421OCRF-Launch_10.jpg') center center;   
+  background-size: 100%;overflow: hidden;height: inherit;width: inherit;display: block;" autoplay="" loop="" controlslist="nodownload" muted="">
+    <source src="https://player.vimeo.com/external/534695806.hd.mp4?s=7f45884588020bb7294d3f81437509476f21817f&amp;profile_id=175&amp;download=1" type="video/mp4">
+     <!-- fallback for Apple Mail/Outlook Mac OS -->
+   <a href="%%=RedirectTo(Concat(@www_witchery_com,'white-shirt-campaign/','?utm_campaign=',@trackingcode,'&utm_source=20&utm_medium=email&utm_content=',@campaigncode,''))=%%" target="_blank" alias="Video" style="font-family:Avenir, Helvetica, Arial, sans-serif; font-size:12px; color:#000000;"><img src="https://image.e.witchery.com.au/lib/fe9012727d60077876/m/31/0421OCRF-Launch_10.jpg" alt="Watch the video" width="540" class="full-width" border="0"></a>
+  </video>
+  </div>
+  <!-- fallback section  -->
+  <div class="video-fallback"> <a href="%%=RedirectTo(Concat(@www_witchery_com,'white-shirt-campaign/','?utm_campaign=',@trackingcode,'&utm_source=20&utm_medium=email&utm_content=',@campaigncode,''))=%%" target="_blank" alias="Video" style="font-family:Avenir, Helvetica, Arial, sans-serif; font-size:12px; color:#000000;"><img src="https://image.e.witchery.com.au/lib/fe9012727d60077876/m/31/0421OCRF-Launch_10p.jpg" alt="Watch the video" width="540" class="full-width" border="0"></a>
+  </div>
+   </td>
+  </tr>
+  
+   
+</table></td><td valign="top" align="center" width="5%"><img class="full-width" src="https://image.e.witchery.com.au/lib/fe9012727d60077876/m/31/0421OCRF-Launch_11bg.jpg" alt="" width="30" height="675" style="display:block;" border="0">
+  </td>
+  </tr>
+  
+
+</table>

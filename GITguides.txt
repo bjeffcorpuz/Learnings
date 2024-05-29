@@ -1,0 +1,31 @@
+Creating Repo + Codes Upload
+
+//get to correct directory first
+// on terminal
+git init
+
+//remot add origin + https link
+git remote add origin "repo Link here"
+
+//you can "git status" to check
+//then add all your files then adding commit comments
+git add .
+git commit -m "Comment here"
+
+//pushing commits to repo
+git push -u origin master
+
+
+
+<!-- Updating codes -->
+git init
+git status //to check the changes
+git add . //adding the modified files
+git commit -m "message here"
+git push -u origin master
+
+
+<!-- getting updates on repo -->
+git pull
+
+
