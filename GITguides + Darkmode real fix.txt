@@ -29,3 +29,7 @@ git push -u origin master
 git pull
 
 
+
+
+dark mode fix
+https://www.youtube.com/watch?v=lQ7jwD0N6rA&ab_channel=EnvatoTuts%2B
