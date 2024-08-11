@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Politix</title>
+
+    <!--[if (mso)|(mso 16)]>
+<style type="text/css">
+a {text-decoration: none ;}
+.mobileFont{color: inherit !important}
+</style>
+<![endif]--> 
+
+<!--[if !mso]><!-- -->
+<style>
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOjCnqEu92Fr1Mu51TjASc0CsTKlA.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOjCnqEu92Fr1Mu51TjASc6CsQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    
+    /* latin-ext */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xGIzIFKw.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOjCnqEu92Fr1Mu51S7ACc0CsTKlA.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOjCnqEu92Fr1Mu51S7ACc6CsQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    /* latin-ext */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+     /* latin-ext */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    
+    /* latin-ext */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    </style>
+    <!--<![endif]-->
+
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->  
+    
+    <style type="text/css">
+    /* ***** CLIENT-SPECIFIC CSS FIXES ***** */
+
+    .headerPol{
+            font-size: 42px !important;
+            line-height: 62px !important;
+            padding: 45px 0 60px !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+    .ExternalClass * {
+        line-height: 100%
+    }
+    img {
+        -ms-interpolation-mode: bicubic !important
+    }
+    a[href^="x-apple-data-detectors:"] {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    
+    @media yahoo {
+    form input {
+        display: none!important;
+        max-height: 0px!important;
+        height: 0px!important;
+        visibility: hidden!important;
+    }
+    }
+    @-webkit-keyframes bugfix {
+    from {
+    padding:0;
+    }
+    to {
+    padding: 0;
+    }
+    }
+    @-ms-viewport {
+    width:device-width
+    }
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+    /* ***** LINKS ***** */
+    a:link, a:active, a:visited, a:hover {
+        color: #000001;
+    }
+    td.cta a, td.cta a:link {
+        color: #4f555d;
+        -webkit-transition: color .2s ease-out, background .5s ease-in;
+        transition: color .2s ease-out, background .5s ease-in;
+    }
+    td.cta a:hover, td.cta a:active {
+        text-decoration: none;
+        background-color: #000000 !important;
+        color: #ffffff!important;
+    }
+    td.cta_rewardbanner a, td.cta_rewardbanner a:link {
+        color: #4f555d;
+        background-color: #e9eaec;
+        -webkit-transition: color .2s ease-out, background .5s ease-in;
+        transition: color .2s ease-out, background .5s ease-in;
+    }
+    td.cta_rewardbanner a:hover, td.cta_rewardbanner a:active {
+        text-decoration: none;
+        background-color: #000000 !important;
+        color: #ffffff!important;
+    }
+    /* ***** DROPDOWN MENU ***** */
+    .desktopmenutext a, .desktopmenutext a strong {
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 12px!important;
+        letter-spacing: 1px !important;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    label, label img {
+        max-height: 0px;
+        height: 0px;
+        -webkit-appearance: none;
+        margin-top: 15px;
+        -moz-appearance: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    /* Dark mode */
+
+    @media (prefers-color-scheme: dark) and (min-width:641px) {
+        .whiteBG{
+            background-color: #ffffff !important;
+            background: url(https://braze-images.com/appboy/communication/assets/image_assets/images/66907c7c74b798005ad7b192/original.jpg?1720745084) !important;
+            background-image: url(https://braze-images.com/appboy/communication/assets/image_assets/images/66907c7c74b798005ad7b192/original.jpg?1720745084) !important;
+        }
+
+        .mobileFont { color: #777777 !important }
+    }
+    
+    /* Reward Banner CSS */
+    
+    @media only screen and (max-width:640px) {
+
+    .copy-pad2{
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+
+    .height30{
+        height: 30px !important;
+    }
+
+    .height60{
+        height: 60px !important;
+    }
+
+    .mobileFont{
+        font-size: 9px !important;
+        line-height: 14px !important;
+    }
+
+    #rewards-right {
+        text-align: right!important;
+        float: right!important;
+    }
+    td#rewards-right {
+        padding: 10px 5% 10px!important;
+    }
+    .heading, #heading {
+        font-weight: normal !important;
+    }
+    /* ***** DISPLAY MODIFIERS***** */
+    .mobile-hide, #mobile-hide {
+        display: none!important;
+        visibility: hidden !important;
+        height: 0px !important;
+        width: 0px!important;
+    }
+    .mobile-show, #mobile-show {
+        width: 100% !important;
+        overflow: visible !important;
+        visibility: visible!important;
+        display: block !important;
+        max-height: none!important;
+    }
+    .nofloat, #nofloat {
+        float: none!important;
+    }
+    /* ***** WIDTH MODIFIERS***** */
+    .full-width, #full-width {
+        width: 100%!important;
+    }
+    .half-width, #half-width {
+        width: 50%!important;
+    }
+    .third-width, #third-width {
+        width: 33%!important;
+    }
+    .quarter-width, #quarter-width {
+        width: 25%!important;
+    }
+    .autoheight {
+        height: auto!important;
+    }
+    .mob-80, #mob-80 {
+        width: 80% !important;
+    }
+    /* ***** IMAGE MODIFIERS***** */
+    .img-full img, #img-full img {
+        width: 100%!important;
+        height: auto!important;
+    }
+    .img-half img, #img-half img {
+        width: 50%!important;
+        height: auto!important;
+    }
+    .img-third img, #img-third img {
+        width: 33%!important;
+        height: auto!important;
+    }
+    /* ***** PADDING MODIFIERS***** */
+    .copy-pad, #copy-pad {
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+        width: 88%!Important;
+    }
+    .all-pad, #all-pad {
+        padding: 4% !important;
+    }
+    .left-copy-pad, #left-copy-pad {
+        padding: 0 3% 0 8% !important;
+    }
+    .right-copy-pad, #right-copy-pad {
+        padding: 0 8% 0 3% !important;
+    }
+    .line90width, #line90width {
+        width: 95% !important;
+    }
+    
+    
+    /* ***** COPY AND CTA SIZE MODIFIERS***** */
+    @media only screen and (max-width:640px) {
+    .centeralign {
+    float: none !important;
+    text-align: center!important;
+    margin: 0 auto;
+    }
+    .pb20 {
+    padding-bottom: 20px!important;
+    }
+    .pl4 {
+    padding-left:4%!important;
+    }
+    .pl6 {
+    padding-left:6%!important;
+    }  
+    .pl10 {
+    padding-left:10%!important;
+    }
+    .no-pad-sides {
+    padding-left:0!important;
+    padding-right:0!important;
+    }
+    .social-button {
+    padding-left: 7px!important;
+    }
+    .digital-wallet-button img {
+    height: auto!important;
+    width: 95%!important;
+    }
+    .mob-footer-small {
+    font-size: 10px!important;
+    }
+    .mob-footer-sup {
+    font-size: 9px!important;
+    }
+    .pt20 {
+    padding-top: 20px!important;
+    }
+    .width-80 {
+    width: 80% !important;
+    }
+    .mobile-90 {
+    width: 90% !important;
+    }
+    .mobile-stack {
+    display: block!important;
+    width: 100% !important;
+    }
+    .wallet-mobile-img {
+    padding: 12px 12% 0;
+    }
+    .wallet-button {
+    padding: 5px 0 15px 0!important;
+    }
+    .wallet-button img {
+    height: 44px!important;
+    width: auto!important;
+    }
+    .cta-link a {
+    line-height: 20px !important;
+    font-size: 14px !important;
+    }
+    .body-copy {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    }
+    
+
+    }
+
+    @media only screen and (max-device-width : 480px) {
+    .h1-copy, #h1-copy {
+    font-size: 38px !important;
+    line-height: 40px !important;
+    }
+    }
+    @media only screen and (max-width:320px) {
+    .pl4 {
+    padding-left:3%!important;
+    }
+    .pl10 {
+    padding-left:6%!important;
+    }
+    .left-copy-pad-9 {
+    padding:0% 8% 0% 8% !important;
+    }
+    .cta-link a {
+    font-size: 12px !important;
+    }
+    .body-copy {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    }
+    .h1-copy, #h1-copy {
+    font-size: 27px !important;
+    line-height: 30px !important;
+    }
+
+    .copy-pad2{
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+    }
+
+    }
+    /* *****DROPDOWN MENU CSS***** */
+    img[class=crmainlogo] {
+        width: 210px!important;
+        height: auto!important;
+        display: block !important;
+        margin: 0 auto!Important;
+        padding: 15px 0 !important;
+    }
+    *[id=wrapper] {
+        border-top: 1px solid #eee !important;
+    }
+    a[class=crmainlogo] {
+        border: 20px !important;
+    }
+    *[class=revealmenu] {
+        width: 30px !important;
+        height: 30px!important;
+        overflow: visible !important;
+        display: block !important;
+        max-height: none!important;
+    }
+    label, label img {
+        display: block;
+        max-height: none;
+        height: 35px;
+        width: 30px!important;
+    }
+    /* Default State */
+    div.menu {
+        visibility: hidden;
+        height: 0px;
+        background: #ffffff;
+        line-height: 36px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        -webkit-transition: height 0.5s, color 1s, -webkit-transform 0.5s;
+        transition: height 0.5s, color 1s, transform 0.5s;
+    }
+    input[id=mobile-checkbox] {
+        display: none !important;
+    }
+    * [title="mob_checkbox"] {
+        display: none !important;
+    }
+    /* Toggled State */
+    input[type=checkbox]:checked ~ div.menu {
+        background: #ffffff;
+        color: #333333;
+        visibility: visible;
+        height: 160px;
+    }
+    input[type=checkbox]:checked ~ table.menutable {
+        opacity: 1;
+    }
+    *[id]#wrapper + table, *[class].container, *[class].menu {
+        min-width: 0 !important;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        width: 100% !important;
+    }
+    *[id]#mobile-label {
+        background-color: #ffffff;
+        cursor: pointer;
+        display: block !important;
+        float: left;
+        padding: 18px 10px 0 10px;
+        -webkit-tap-highlight-color: transparent;
+        width: 18px;
+        margin-top: 0;
+    }
+    *[id]#mobile-label > b {
+        background-color: #55565B;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        display: block;
+        height: 3px;
+        vertical-align: middle !important;
+    }
+    *[id]#mobile-label > b + b {
+        margin-top: 4px;
+    }
+    *[class].menu td {
+        padding-top: 0px !important;
+        padding-bottom: 0px;
+        background-color: #ffffff !important;
+    }
+    *[id]#menu-wrapper {
+        height: 0px;
+        overflow: hidden;
+        -moz-transition: height .25s linear;
+        -ms-transition: height .25s linear;
+        -o-transition: height .25s linear;
+        -webkit-transition: height .25s linear;
+        transition: height .25s linear;
+        border-bottom: 1px solid #eee;
+    }
+    *[id]#menu-wrapper img {
+        margin: 0 auto!important;
+    }
+    *[id]#mobile-checkbox:checked + table #menu-wrapper {
+        height: 260px;
+        border: 0!important
+    }
+    .toppad42px {
+        padding-top: 42px !important;
+    }
+    *[id=border] {
+        border-bottom: 1px solid #cccccc;
+    }
+    a[class=menuitem] {
+        display: block !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        width: 100%!important;
+        border-bottom: 1px solid #eeeeee;
+        text-align: center;
+        padding-left: 0px !important;
+        padding-right: 0px!important;
+    }
+    td[class=menuitem] {
+        letter-spacing: 2px !important;
+        font-size: 14px !important;
+        line-height: 15px !important;
+        color: #000000 !important;
+        background-color: #ffffff !important;
+        text-transform: uppercase !important;
+    }
+    }
+    
+    @media only screen and (max-device-width : 420px) {
+    /***** iPhone Plus specific classes *****/
+    
+    img[class=crmainlogo] {
+        width: 210px!important;
+        height: auto!important;
+        display: block !important;
+        margin: 0 auto 0 10vw!important;
+        padding: 16px 7px 20px 10px!Important;
+    }
+    }
+    
+    @media only screen and (max-device-width : 380px) {
+    /***** iPhone 6 specific classes *****/
+    
+    img[class=crmainlogo] {
+        width: 210px!important;
+        height: auto!important;
+        display: block !important;
+        margin: 0 auto 0 8vw!important;
+        padding: 16px 7px 20px 10px!Important;
+    }
+    }
+    
+    @media only screen and (max-device-width : 320px) {
+    /***** iPhone 5 specific classes *****/
+    .ip5-text, #ip5-text {
+        font-size: 10px !important;
+    }
+    .ip5-hidden, #ip5-hidden {
+        display: none!important;
+        visibility: hidden !important;
+        height: 0px !important;
+        width: 0px!important;
+    }
+    img[class=crmainlogo] {
+        width: 210px!important;
+        height: auto!important;
+        display: block !important;
+        margin: 0 auto 0 2vw!important;
+        padding: 16px 7px 20px 10px!Important;
+    }
+    }
+    </style>
+    <style>
+     
+    .newunderline {
+      text-decoration: underline !important;
+    }
+      
+      
+    @media only screen and (max-width:640px) {
+        .body-copy {
+      font-size: 14px !important;
+      line-height: 24px !important;
+     } 
+       .left-copy-pad{
+      padding: 0% 0% 0% 10% !important;
+     }
+      .line90width {
+        width: 90% !important;
+    }
+      .img-right {
+        width: 60% !important;
+        text-align: right !important;
+    }
+     .cta-link-2 a {
+        font-size: 12px !important;
+    }
+    
+      .width-110 {
+        width: 110% !important;
+    }
+    .width-20 {
+        width: 20% !important;
+    }
+    .width-80 {
+        width: 80% !important;
+    }
+    .text-padding {
+        padding: 0 6% 0 16% !important;
+    }
+    .text-padding2 {
+        padding: 10% 6% 10% 16% !important;
+    }
+    .left-copy-pad-6 {
+        padding: 0% 6% 0% 24% !important;
+    }
+    .left-copy-pad-5 {
+        padding: 0% 6% 0% 18% !important;
+    }
+      .left-copy-pad-45 {
+        padding: 0% 6% 0% 15% !important;
+    }
+    .left-copy-pad-4 {
+        padding: 0% 6% 0% 12% !important;
+    }
+    .left-copy-pad-3 {
+        padding: 0% 6% 0% 8% !important;
+    }
+    .left-copy-pad-2 {
+        padding: 0% 6% 0% 6% !important;
+    }
+    .full-float {
+        width: 100% !important;
+        float: none !important;
+    }
+    .float-none {
+        float: none !important;
+    }
+    .top-pad {
+        padding-top: 20px !important;
+    }
+    .vertical-pad {
+        padding-top: 3% !important;
+        padding-bottom: 3% !important;
+    }
+    .mobile-80 {
+        width: 100% !important;
+    }
+    .widthad, #widthad {
+        width: 320px;
+        height: auto !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    /* need to add this new classes */
+    
+    .cta_block{
+      display: block !important;
+    }
+    
+    .width-65{
+      width:66.64% !important
+    }
+    
+    .width-34{
+      width: 33.36% !important;
+    }
+    
+    .left-copy-pad-9 {
+       padding: 0% 15% 0% 15% !important;
+    }
+    
+    .left-copy-pad-8 {
+         padding: 0% 8% 0% 8% !important;
+     }  
+       
+    
+    .oneThird {
+      width:33.33% !important
+    }
+    
+    .left-copy-pad-10 {
+         padding: 0% 2% 0% 2% !important;
+     }  
+    
+    
+     .padTB35{
+       padding-top:35px !important;
+       padding-bottom: 35px !important;
+     }
+    }
+      
+     @media only screen and (max-width:320px) {
+      .cta-link a { font-size: 14px !important;} 
+          .body-copy {
+    font-size: 14px !important;
+      line-height: 24px !important;
+        }
+       .h1-copy, #h1-copy {font-size: 27px !important; line-height: 30px !important;}
+    
+     
+      }
+       
+    </style>
+    <style>
+        @media only screen and (max-width:640px) {
+        .body-copy2 {
+      font-size: 12px !important;
+      line-height: 18px !important;
+     } 
+            .cta-link-2 td{
+                height: 18px !important;
+            }
+             .cta-link-2 a {
+        font-size: 12px !important;
+           line-height: 18px !important;
+    
+    }
+
+        .headerPol{
+            font-size: 29px !important;
+            line-height: 38px !important;
+            padding: 35px 0 45px !important;
+        }
+    
+    }
+    </style>
+</head>
+<body class="body" style="background-color:#fff;margin:0;padding:0;-webkit-text-size-adjust:none;text-size-adjust:none">
+
+<!-- Header -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+    <tr>
+        <td style="font-size: 0;">
+            <!--[if false]><!-->
+                <div class="mobile-show" style="mso-hide: all;">
+                    <img alt="Image Alt" border="0" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b02bb3abb4570079b5e55f/original.jpg?1722821554" style="mso-hide:all; max-width: 100%; height: auto; " width="100%">
+                </div>
+            <!--<![endif]-->
+            <img class="mobile-hide" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b02bb3abb4570079b5e55f/original.jpg?1722821554" height="auto" alt="Image Alt" width="600" style="border: 0; display: none; height: auto; margin: 0px; max-width: 100%; width: 100%; ">
+        </td>
+    </tr>
+</table>
+<!-- end of header -->
+
+
+<!-- Content -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width" bgcolor="#f2f2f2">
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 38px; font-size:29px;color: #000000; display:block; font-weight:normal; margin:0 auto; padding: 35px 0 45px 0px; " valign="top" align="center" class="headerPol">
+            Thanks for shopping <br>with POLITIX!
+
+        </td>
+    </tr>
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 28px; font-size:16px;color: #000000; display:block; font-weight:400; margin:0 auto; padding: 0 0 0 0px; " valign="top" align="center" class="copy-pad2 body-copy">
+            Please see your digital receipt.
+
+        </td>
+    </tr>
+    <tr>
+        <td height="20" style="height:20px; font-size: 1px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 28px; font-size:16px;color: #000000; display:block; font-weight:400; margin:0 auto; padding: 0 20%; " valign="top" align="center" class="body-copy copy-pad2">
+            If you have any questions, please call us on <br class="mobile-hide">1899&nbsp;765&nbsp;484 or <a href="mailto: online@politix.com.au" style="text-decoration: none; color: #000000">email online@politix.com.au</a>
+            
+        </td>
+    </tr>
+    <tr>
+        <td class="height30" height="50" style="height:50px; font-size: 1px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 28px; font-size:16px;color: #000000; display:block; font-weight:400; margin:0 auto; padding: 0 20%; " valign="top" align="center" class="body-copy copy-pad2">
+            Sign in to your account to view your rewards and explore exclusive P+&nbsp;offers
+        </td>
+    </tr>
+    <tr>
+        <td height="50" style="height:50px; font-size: 1px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 28px; font-size:16px;color: #000000; display:block; font-weight:400; margin:0 auto; padding: 0 0 0 0px; " valign="top" align="center" class="body-copy copy-pad2">
+            <table width="240" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width" bgcolor="#000000" style="width: 100% !important; max-width: 240px">
+                <tr>
+                    <td align="center" style="padding: 14px 0; color: #ffffff">
+                        <a class="cta" href="https://www.politix.com.au/login" alias="" target="_blank" style="line-height: 1; color: #ffffff; display: block; font-size: 16px; text-decoration: none;">SIGN IN</a>
+                    </td>
+                <tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="40" style="height:40px; font-size: 1px">&nbsp;</td>
+    </tr>
+</table>
+
+
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width whiteBG" bgcolor="#ffffff">
+    <tr>
+        <td>
+            <!--[if false]><!-->
+                <div class="mobile-show" style="mso-hide: all;">
+                    <img alt="Exclusive rewards" border="0" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b02bb7cb9e75005b1d2b4d/original.jpg?1722821559" style="mso-hide:all; max-width: 100%; height: auto; " width="100%">
+                </div>
+            <!--<![endif]-->
+            <img class="mobile-hide" src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b02bb434f1f8005c4fd0a7/original.jpg?1722821555" height="auto" alt="Exclusive rewards" width="600" style="border: 0; display: none; height: auto; margin: 0px; max-width: 100%; width: 100%; ">
+        </td>
+    </tr> 
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 28px; font-size:16px;color: #000000; display:block; font-weight:400; margin:0 auto; padding: 0 0 0 0px; " valign="top" align="center" class="body-copy copy-pad2">
+            <table width="240" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width" bgcolor="#000000" style="width: 100% !important; max-width: 240px">
+                <tr>
+                    <td align="center" style="padding: 14px 0; color: #ffffff">
+                        <a class="cta" href="https://www.politix.com.au/new-in/" alias="" target="_blank" style="line-height: 1; color: #ffffff; display: block; font-size: 16px; text-decoration: none;">SHOP NEW IN</a>
+                    </td>
+                <tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="100" class="height60" style="height:100px; font-size: 1px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style=" font-family:'Roboto',Arial, sans-serif; letter-spacing:0px; text-align:center;  line-height: 20px; font-size:12px;color: #000000; display:block; font-weight:400; margin:0 auto; padding: 0 0 0 0px; " valign="top" align="center" class="copy-pad2 mobileFont">
+           FREE DELIVERY AND RETURNS ACROSS AUSTRALIA<br>
+           FOR POLITIX PLUS MEMBERS 
+        </td>
+    </tr>
+    <tr>
+        <td height="30" style="height:30px; font-size: 1px">&nbsp;</td>
+    </tr>
+</table>
+
+<!-- end of Content -->
+
+<!-- Footer -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width">
+    <tr>
+        <td style="padding: 0 6%">
+            <table width="530" border="0" cellspacing="0" cellpadding="0" align="center" class="full-width" style="width: 100%; max-width: 530px;">
+                <tr>
+                    <td style="padding: 30px 0; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; font-size: 0; text-align: center;">
+    
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center">
+                            <tr>
+                                <td align="center" style="padding: 0; " valign="middle">
+                                    <a href="https://www.facebook.com/PolitixMenswear" target="_blank" style="text-decoration: none;">
+                                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b03d8efd42980078de8f7b/original.png?1722826126" alt="Facebook" width="20" height="auto" style="display:block;" border="0">
+                                    </a>
+                                </td>
+                                <td width="30" style="width:30px;font-size: 1px;">&nbsp;</td>
+                                <td align="center" style="padding: 0; " valign="middle">
+                                    <a href="https://www.instagram.com/PolitixMenswear" target="_blank" style="text-decoration: none;">
+                                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b03d8efd4298005bdea8d0/original.png?1722826126" alt="Instagram" width="27" height="auto" style="display:block;" border="0">
+                                    </a>    
+                                </td>
+                                <td width="30" style="width:30px;font-size: 1px;">&nbsp;</td>
+                                <td align="center" style="padding: 0; " valign="middle">
+                                    <a href="https://www.youtube.com/PolitixMenswear" target="_blank" style="text-decoration: none;">
+                                        <img src="https://braze-images.com/appboy/communication/assets/image_assets/images/66b03d8efd42980087de8df2/original.png?1722826126" alt="Youtube" width="34" height="auto" style="display:block;" border="0">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+             
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="height30" height="44" style="height:44px; font-size: 1px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td align="left" style="text-align: center; font-family: 'Roboto',Arial, sans-serif; font-size: 10px; color: #000000; line-height: 24px; padding: 0px">
+            Politix © 2022, All rights reserved.<br>
+            Building 2, 572 Swan Street, Burnley, VIC 3121, Australia
+        </td>
+    </tr>
+    <tr>
+        <td class="height30" height="35" style="height:35px; font-size: 1px">&nbsp;</td>
+    </tr>
+    <!-- <tr>
+        <td align="left" style="text-align: center; font-family: 'Roboto',Arial, sans-serif; font-size: 10px; color: #000000; line-height: 24px; padding: 0px">
+            <a href="#" target="_blank" style="color:#000000; font-size:10px; text-decoration: none;">View Online</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#" target="_blank" style="color:#000000; font-size:10px; text-decoration: none;">Unsubscribe</a>
+        </td>
+    </tr> -->
+</table>
+<br>
+<!-- end of Footer -->
+
+</body>
+</html>
